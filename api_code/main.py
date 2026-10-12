@@ -12,7 +12,7 @@ security = HTTPBasic()
 
 def authenticate(credentials: HTTPBasicCredentials = Depends(security)):
     correct_username = secrets.compare_digest(credentials.username, "admin")
-    correct_password = secrets.compare_digest(credentials.password, "manish")
+    correct_password = secrets.compare_digest(credentials.password, "vinayak")
 
     if not (correct_username and correct_password):
         raise HTTPException(
