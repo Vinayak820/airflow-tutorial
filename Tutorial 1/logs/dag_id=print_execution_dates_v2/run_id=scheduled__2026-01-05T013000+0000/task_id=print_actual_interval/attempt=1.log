@@ -1,0 +1,7 @@
+{"timestamp":"2026-10-13T09:01:27.397525Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-10-13T09:01:27.398861Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/test1.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-10-13T09:01:27.488382Z","level":"info","event":"Period Start:  2026-01-05 01:30:00+00:00","logger":"task.stdout"}
+{"timestamp":"2026-10-13T09:01:27.491961Z","level":"info","event":"Period End:    2026-01-05 02:30:00+00:00","logger":"task.stdout"}
+{"timestamp":"2026-10-13T09:01:27.492677Z","level":"info","event":"Logical Date:  2026-01-05 01:30:00+00:00","logger":"task.stdout"}
+{"timestamp":"2026-10-13T09:01:27.493453Z","level":"info","event":"Run After:     2026-01-05 02:30:00+00:00","logger":"task.stdout"}
+{"timestamp":"2026-10-13T09:01:27.488432Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator","filename":"python.py","lineno":215}

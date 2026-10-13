@@ -1,0 +1,5 @@
+{"timestamp":"2026-10-13T09:12:48.077268Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-10-13T09:12:48.078546Z","level":"warning","event":"Bundle 'dags-folder' path does not exist: /opt/airflow/dags. This may cause DAG loading issues.","logger":"airflow.dag_processing.bundles.base","filename":"base.py","lineno":298}
+{"timestamp":"2026-10-13T09:12:48.079011Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/test1.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-10-13T09:12:48.079812Z","level":"error","event":"Dag not found during start up","dag_id":"print_execution_dates_v2","bundle":"BundleInfo(name='dags-folder', version=None)","path":"test1.py","logger":"task","filename":"task_runner.py","lineno":638}
+{"timestamp":"2026-10-13T09:12:48.095996Z","level":"warning","event":"Process exited abnormally","exit_code":1,"logger":"task"}
