@@ -1,9 +1,9 @@
 [project]
-name = "airflow-tutorial"
+name = "apache-airflow-main"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "apache-airflow>=3.1.6",
+    "apache-airflow>=3.3.2",
 ]
