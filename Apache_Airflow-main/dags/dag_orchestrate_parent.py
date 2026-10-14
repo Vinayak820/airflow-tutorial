@@ -1,7 +1,7 @@
 from dag_orchestrate_1 import first_orchestrator_dag
 from dag_orchestrate_2 import second_orchestrator_dag
 from airflow.sdk import dag, task
-from airflow.operators.trigger_dagrun import TriggerDagRunOperator
+from airflow.providers.standard.operators.trigger_dagrun import TriggerDagRunOperator
 
 '''Before triggering this parent DAG, ensure that both child DAGs
 are enabled in the Airflow UI. Otherwise, this parent DAG will trigger
@@ -16,6 +16,7 @@ def dag_orchestrate_parent():
         task_id="trigger_first_orchestrator_dag",
         trigger_dag_id="first_orchestrator_dag",
         wait_for_completion=True # Optional (This is slow): Waits for the triggered DAG to complete
+        # because these task can be run asynchronously.
     )
 
     trigger_second_dag = TriggerDagRunOperator(

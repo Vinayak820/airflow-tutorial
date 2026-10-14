@@ -1,5 +1,5 @@
 from airflow.sdk import dag, task 
-from airflow.operators.bash import BashOperator
+from airflow.providers.standard.operators.bash import BashOperator
 
 @dag(
         dag_id="operators_dag",
